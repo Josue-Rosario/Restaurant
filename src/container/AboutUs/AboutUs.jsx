@@ -2,6 +2,7 @@ import React from "react";
 
 import { images } from "../../constants";
 import "./AboutUs.css";
+import { motion } from "framer-motion";
 
 const AboutUs = () => (
   <div
@@ -25,9 +26,16 @@ const AboutUs = () => (
         </button>
       </div>
 
-      <div className="app__aboutus-content_knife flex__center">
+      <motion.div
+        whileHover={{
+          scale: 1.1,
+          transition: { duration: 1 },
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="app__aboutus-content_knife flex__center"
+      >
         <img src={images.knife} alt="about_knife" />
-      </div>
+      </motion.div>
       <div className="app__aboutus-content_history">
         <h1 className="headtext__cormorant">Our history</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />

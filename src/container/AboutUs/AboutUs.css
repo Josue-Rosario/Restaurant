@@ -29,11 +29,11 @@
 }
 
 .app__aboutus-content_knife {
-    margin: 2rem 4rem;
+    margin: 1rem 4rem;
 }
 
 .app__aboutus-content_knife img {
-    height: 910px;
+    height: 810px;
 }
 
 .app__aboutus-content_history {
@@ -48,8 +48,8 @@
 
 .app__aboutus-content_about p,
 .app__aboutus-content_history p {
-    margin: 2rem 0;
-    color: var(--color-grey);
+    margin: 1rem 0;
+    color: var(--color-white);
 }
 
 @media screen and (min-width: 2000px) {

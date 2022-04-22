@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { SubHeading } from "../../components";
 import { images, data } from "../../constants";
 import "./Laurels.css";
@@ -29,9 +29,16 @@ const Laurels = () => (
       </div>
     </div>
 
-    <div className="app__wrapper_img">
+    <motion.div
+      whileHover={{
+        scale: 1.3,
+        transition: { duration: 1 },
+      }}
+      whileTap={{ scale: 0.9 }}
+      className="app__wrapper_img"
+    >
       <img src={images.laurels} alt="laurels_img" />
-    </div>
+    </motion.div>
   </div>
 );
 

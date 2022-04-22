@@ -4,7 +4,7 @@ import {
   BsArrowLeftShort,
   BsArrowRightShort,
 } from "react-icons/bs";
-
+import { motion } from "framer-motion";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Gallery.css";
@@ -46,13 +46,15 @@ const Gallery = () => {
             images.gallery03,
             images.gallery04,
           ].map((image, index) => (
-            <div
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
               className="app__gallery-images_card flex__center"
               key={`gallery_image-${index + 1}`}
             >
               <img src={image} alt="gallery_image" />
               <BsInstagram className="gallery__image-icon" />
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="app__gallery-images_arrows">

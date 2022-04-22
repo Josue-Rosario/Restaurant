@@ -3,6 +3,7 @@ import React from "react";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Header.css";
+import { motion } from "framer-motion";
 
 const Header = () => (
   <div className="app__header app__wrapper section__padding" id="home">
@@ -19,9 +20,16 @@ const Header = () => (
       </button>
     </div>
 
-    <div className="app__wrapper_img">
+    <motion.div
+      whileHover={{
+        scale: 1.3,
+        transition: { duration: 1 },
+      }}
+      whileTap={{ scale: 0.9 }}
+      className="app__wrapper_img"
+    >
       <img src={images.welcome} alt="header_img" />
-    </div>
+    </motion.div>
   </div>
 );
 
