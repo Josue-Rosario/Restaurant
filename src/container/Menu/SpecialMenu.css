@@ -83,4 +83,8 @@
         font-size: 35px;
         line-height: 48.5px;
     }
+
+    .motio.div {
+            scale: 1.1
+    }
 } 

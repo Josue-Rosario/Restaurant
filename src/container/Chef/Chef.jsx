@@ -16,6 +16,7 @@ const Chef = () => (
     >
       <img src={images.chef} alt="chef_image" />
     </motion.div>
+
     <div className="app__wrapper_info">
       <SubHeading title="Chef's word" />
       <h1 className="headtext__cormorant">What we believe in</h1>

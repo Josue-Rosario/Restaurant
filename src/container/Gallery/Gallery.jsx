@@ -4,10 +4,10 @@ import {
   BsArrowLeftShort,
   BsArrowRightShort,
 } from "react-icons/bs";
-import { motion } from "framer-motion";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Gallery.css";
+import { motion } from "framer-motion";
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
@@ -47,7 +47,10 @@ const Gallery = () => {
             images.gallery04,
           ].map((image, index) => (
             <motion.div
-              whileHover={{ scale: 1.1 }}
+              whileHover={{
+                scale: 1.3,
+                transition: { duration: 1 },
+              }}
               whileTap={{ scale: 0.9 }}
               className="app__gallery-images_card flex__center"
               key={`gallery_image-${index + 1}`}

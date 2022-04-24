@@ -1,8 +1,7 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { images } from "../../constants";
 import "./AboutUs.css";
-import { motion } from "framer-motion";
 
 const AboutUs = () => (
   <div
@@ -28,7 +27,7 @@ const AboutUs = () => (
 
       <motion.div
         whileHover={{
-          scale: 1.1,
+          scale: 1.3,
           transition: { duration: 1 },
         }}
         whileTap={{ scale: 0.9 }}

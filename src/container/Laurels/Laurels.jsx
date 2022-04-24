@@ -1,8 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { SubHeading } from "../../components";
 import { images, data } from "../../constants";
 import "./Laurels.css";
+import { motion } from "framer-motion";
 
 const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
   <div className="app__laurels_awards-card">

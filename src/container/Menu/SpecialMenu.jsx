@@ -29,7 +29,7 @@ const SpecialMenu = () => (
 
       <motion.div
         whileHover={{
-          scale: 1.3,
+          scale: 1.1,
           transition: { duration: 1 },
         }}
         whileTap={{ scale: 0.9 }}

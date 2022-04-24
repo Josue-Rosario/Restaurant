@@ -1,9 +1,8 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { SubHeading } from "../../components";
 import { images } from "../../constants";
 import "./Header.css";
-import { motion } from "framer-motion";
 
 const Header = () => (
   <div className="app__header app__wrapper section__padding" id="home">
